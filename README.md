@@ -29,11 +29,13 @@ Hal pertama yang akan dilakukan adalah Data Prepocessing. Pada project ini tahap
   <li>Menghapus beberapa feature yang berlebihan, yaitu feature ["Marital_Status", "Dt_Customer", "Z_CostContact", "Z_Revenue", "Year_Birth", "ID"].</li>
 </ul>
 <h3>3.label Encoding</h3>
-<p>	Dilakukan label encoding untuk mengubah data yang bertipe kategorikal menjadi data yang bertipe numerik. Pada projek ini enconding categorical data dilakukan menggunakan teknik Label Encoding. Jadi setiap kategoril diganti dengan integer(bilangan bulat).</p>
+<p>	Dilakukan label encoding untuk mengubah data yang bertipe categorical menjadi data yang bertipe numerik. Pada projek ini enconding categorical data dilakukan menggunakan teknik Label Encoding. Jadi setiap kategoril diganti dengan integer(bilangan bulat).</p>
 <h3>4.Feature Scaling: Standarisasi Data</h3>
 <p>
-Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari mean dan std deviasi setiap feature dapat dilihat bahwasannya terdapat proporsi yang inbalance. Misalnya pada  feature age dan spent. Feature Age memiliki nilai mean = 52.17963 dan Spent memiliki nilai mean=607.075361. Proporsi data yang imbalance inilah yang memungkinkan model menjadi bias dan menganggap feature spent lebih penting daripada feature age. Oleh karena itu, dilakukan standarisasi nilai-nilai dari suatu fitur sehingga nilai-nilai tersebut memiliki skala yang sama dengan cara setiap nilai pada sebuah atribut numerik akan dikurangi dengan rata-rata dan dibagi dengan standar deviasi dari seluruh nilai pada sebuah kolom atribut. Untuk implementasinya menggunakan Library dari sklearn, yaitu StandardScaler()
+Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari mean dan std deviasi setiap feature dapat dilihat bahwasannya terdapat proporsi yang inbalance. Misalnya pada  feature age dan spent. Feature Age memiliki nilai mean = 52.17963 dan Spent memiliki nilai mean=607.075361. Proporsi data yang imbalance inilah yang memungkinkan model menjadi bias dan menganggap feature spent lebih penting daripada feature age. Oleh karena itu, dilakukan standarisasi nilai-nilai dari suatu fitur sehingga nilai-nilai tersebut memiliki skala yang sama dengan cara setiap nilai pada sebuah atribut numerik akan dikurangi dengan rata-rata dan dibagi dengan standar deviasi dari seluruh nilai pada sebuah kolom atribut. 
+  ![image](https://github.com/user-attachments/assets/3a8b7716-7e45-49a0-9b5a-d227a61038fe)
 </p>
+<p>Untuk implementasinya dapat menggunakan Library dari sklearn StandardScaler()</p>
 <h3>5.Principal Component Analysis(PCA)</h3>
 <p>Selanjutnya adalah melakukan dimensi reduction menggunakan PCA.
   motivasi dari PCA disini adalah untuk meminimalisir data yang dipakai tapi disisi lain tidak boleh ada informasi yang hilang. PCA akan menghasilkan variable baru dengan memanfaatkan variable lama ( kombinasi linear dari variabel lama). Pengimplemntasiannya dilakukan dengan menggunakan library dari skelarn, yaitu PCA().
@@ -50,7 +52,23 @@ Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari
 
 <h3>Conclussion</h3>
 <p>
-  
+  Berdasarkan income dan spent, pelanggan dapat di klasterisasi menjadi 4 cluster.
+  <ul>
+    <li>Cluster 0 (Coklat)</li>
+    <p>
+      Merepresentasikan pelanggan dengan income menengah atas dan pengeluaran income mereka yang sedang.
+    </p>
+    <li>Cluster 1 (Biru muda)</li>
+    <p>
+      Memiliki karakteristik income yang sedang-rendah dengan pengeluaran yang rendah pula
+    </p>
+    <li>Cluster 2 (grey)</li>
+    <p>
+      Merepresentasikan pelanggan dengan income yang tinggi dan nilai dari range pengeluaran yang luas. cluster 2 mirip dengan cluster 0, akan tetapi cluster 2 extends to higher income.
+    </p>
+    <li>Cluster 3 (orange)</li>
+    <p>Merepresentasikan low level income dengan pengeluaran rendah-sedang</p>
+  </ul>
   ![image](https://github.com/user-attachments/assets/314a1168-a5d6-47d9-9327-20940b15c8fe)
 </p>
 <h4>References</h4>
