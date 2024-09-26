@@ -50,6 +50,11 @@ Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari
 
 <h3>Conclussion</h3>
 <p>
+  
   ![image](https://github.com/user-attachments/assets/314a1168-a5d6-47d9-9327-20940b15c8fe)
 </p>
 <h4>References</h4>
+<ul>
+  <li>https://builtin.com/machine-learning/agglomerative-clustering</li>
+  <li>https://towardsdatascience.com/principal-component-analysis-pca-explained-visually-with-zero-math-1cbf392b9e7d</li>
+</ul>
