@@ -69,8 +69,9 @@ Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari
     <li>Cluster 3 (orange)</li>
     <p>Merepresentasikan low level income dengan pengeluaran rendah-sedang</p>
   </ul>
-  ![image](https://github.com/user-attachments/assets/314a1168-a5d6-47d9-9327-20940b15c8fe)
 </p>
+![Hasil Klasterisasi](https://github.com/user-attachments/assets/31a7e82d-ebf1-41a1-a8e5-0d1702806a07)
+
 <h4>References</h4>
 <ul>
   <li>https://builtin.com/machine-learning/agglomerative-clustering</li>
