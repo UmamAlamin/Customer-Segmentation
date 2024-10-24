@@ -33,8 +33,9 @@ Hal pertama yang akan dilakukan adalah Data Prepocessing. Pada project ini tahap
 <h3>4.Feature Scaling: Standarisasi Data</h3>
 <p>
 Secara sederhana dilakukan standarisasi agar model tidak bias. Jika dilihat dari mean dan std deviasi setiap feature dapat dilihat bahwasannya terdapat proporsi yang inbalance. Misalnya pada  feature age dan spent. Feature Age memiliki nilai mean = 52.17963 dan Spent memiliki nilai mean=607.075361. Proporsi data yang imbalance inilah yang memungkinkan model menjadi bias dan menganggap feature spent lebih penting daripada feature age. Oleh karena itu, dilakukan standarisasi nilai-nilai dari suatu fitur sehingga nilai-nilai tersebut memiliki skala yang sama dengan cara setiap nilai pada sebuah atribut numerik akan dikurangi dengan rata-rata dan dibagi dengan standar deviasi dari seluruh nilai pada sebuah kolom atribut. 
-  ![image](https://github.com/user-attachments/assets/3a8b7716-7e45-49a0-9b5a-d227a61038fe)
 </p>
+
+![image](https://github.com/user-attachments/assets/3a8b7716-7e45-49a0-9b5a-d227a61038fe)
 <p>Untuk implementasinya dapat menggunakan Library dari sklearn StandardScaler()</p>
 <h3>5.Principal Component Analysis(PCA)</h3>
 <p>Selanjutnya adalah melakukan dimensi reduction menggunakan PCA.
